@@ -2,5 +2,5 @@ name: Post Welcome Comment
 on:
   pull-request:
     types: [opened]
-  permissions:
-    pull-requests: write
+permissions:
+  pull-requests: write
