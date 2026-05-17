@@ -1,0 +1,12 @@
+# CODEOWNERS
+# This file defines who automatically reviews PRs for specific folders.
+# GitHub will auto-request reviews from these owners.
+
+# Entire repository
+* @vpnsin
+
+# Components & UI
+src/components/ @vpnsin
+
+# Workflows
+.github/workflows/ @vpnsin
