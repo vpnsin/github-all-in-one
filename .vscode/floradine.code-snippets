@@ -1,0 +1,54 @@
+{
+  "Next Component": {
+    "prefix": "nxcomp",
+    "body": [
+      "export default function ${1:Component}() {",
+      "  return (",
+      "    <div className=\"${2:}\">",
+      "      ${3}",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "Minimal Next.js component"
+  },
+  "New Snippet": {
+  "prefix": "new",
+  "body": [
+    "console.log('Hello World');"
+  ]
+},
+
+  "API Route": {
+    "prefix": "api",
+    "body": [
+      "export async function GET(req) {",
+      "  return Response.json({ message: \"${1:success}\" });",
+      "}"
+    ],
+    "description": "Next.js API route"
+  },
+  "Feature Card": {
+    "prefix": "fcard",
+    "body": [
+      "<div className=\"p-6 rounded-xl bg-white shadow-sm\">",
+      "  <h3 className=\"text-xl font-semibold mb-2\">${1:Title}</h3>",
+      "  <p className=\"text-gray-600\">${2:Description}</p>",
+      "</div>"
+    ],
+    "description": "Reusable feature card"
+  },
+    "Section Block": {
+    "prefix": "section",
+    "body": [
+      "<section className=\"py-16 ${1}\">",
+      "  <div className=\"max-w-6xl mx-auto px-4\">",
+      "    ${2}",
+      "  </div>",
+      "</section>"
+    ],
+    "description": "Standard section layout"
+  },
+
+
+}
