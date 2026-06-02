@@ -56,7 +56,7 @@ jobs:
       - name: Check for workflow name in welcome.yml
         id: check-workflow-name
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "name:"
@@ -64,7 +64,7 @@ jobs:
       - name: Check for pull_request event in welcome.yml
         id: check-pull-request-event
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "pull_request:"
@@ -72,7 +72,7 @@ jobs:
       - name: Check for types filter
         id: check-opened-type
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "types:"
@@ -80,7 +80,7 @@ jobs:
       - name: Check for permissions in welcome.yml
         id: check-permissions
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "pull-requests: write"
