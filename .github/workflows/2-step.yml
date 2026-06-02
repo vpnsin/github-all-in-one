@@ -47,7 +47,7 @@ jobs:
       - name: Check for jobs section in welcome.yml
         id: check-jobs-section
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "jobs:"
@@ -55,7 +55,7 @@ jobs:
       - name: Check for welcome job in welcome.yml
         id: check-welcome-job
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "welcome:"
@@ -63,7 +63,7 @@ jobs:
       - name: Check for runs-on ubuntu-latest in welcome.yml
         id: check-runs-on
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "runs-on: ubuntu-latest"

@@ -56,7 +56,7 @@ jobs:
       - name: Check for steps section in welcome.yml
         id: check-steps-section
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "steps:"
@@ -65,7 +65,7 @@ jobs:
       - name: Check for gh pr comment command in welcome.yml
         id: check-gh-pr-comment
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "gh pr comment"
@@ -73,7 +73,7 @@ jobs:
       - name: Check for GITHUB_TOKEN env var in welcome.yml
         id: check-github-token
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "GITHUB_TOKEN:"
@@ -81,7 +81,7 @@ jobs:
       - name: Check for PR_URL env var in welcome.yml
         id: check-pr-url
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           text-file: .github/workflows/welcome.yml
           keyphrase: "PR_URL:"
